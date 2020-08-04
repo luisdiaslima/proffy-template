@@ -1,17 +1,10 @@
 import React from 'react';
-import { PomodoroTimer } from './components/pomodoro-timer';
+
+import Routes from './routes';
+import './assets/styles/global.css';
 
 function App() {
-  return (
-    <div className="App">
-      <PomodoroTimer
-        defaultPomodoroTime={10}
-        shortRestTime={2}
-        longRestTime={5}
-        cycles={4}
-      />
-    </div>
-  );
+  return <Routes />;
 }
 
 export default App;
