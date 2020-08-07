@@ -1,0 +1,98 @@
+import styled from 'styled-components';
+
+export const PageTeacherList = styled.div`
+  width: 100vw;
+  height: 100vh;
+
+  > main {
+    margin: 3.2rem auto;
+    width: 90%;
+  }
+
+  @media (min-width: 700px) {
+    max-width: 100%;
+
+    > main {
+      padding: 3.2rem 0;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+  }
+`;
+
+export const SearchTeachers = styled.form`
+  margin-top: 3.2rem;
+
+  > button {
+    width: 100%;
+  height: 5.6rem;
+  background: var(--color-secundary);
+  color: var(--color-butto-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
+
+  &:hover {
+  background: var(--color-secundary-dark);
+}
+}
+
+
+  }
+
+  .input-block {
+    position: relative;
+  }
+
+  .input-block + .input-block {
+    margin-top: 1.4rem;
+  }
+
+  .input-block label {
+    margin-top: 1.4rem;
+    color: ${(props) => props.theme.colors.textInPrimary};
+  }
+
+  .input-block input {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background: ${(props) => props.theme.colors.inputBackground};
+    border: 1px solid ${(props) => props.theme.colors.lineInWhite};
+    outline: 0;
+    padding: 1.6rem;
+    font: 1.6rem Archivo;
+  }
+
+  .input-block:focus-within::after {
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    content: '';
+    background: ${(props) => props.theme.colors.primaryLight};
+    position: absolute;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 0;
+  }
+
+  @media (min-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    position: absolute;
+    bottom: -28px;
+
+    > .select-block + .select-block,
+    .input-block + .input-block {
+      margin-top: 0;
+    }
+  }
+`;
