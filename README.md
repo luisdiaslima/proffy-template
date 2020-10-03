@@ -54,7 +54,7 @@ algo que eu tinha muito conflito, que era as Props no TypeScript.
 1. Faça um clone :
 
 ```sh
-  $ git clone https://github.com/thisluis/agro-commerce.git
+  $ git clone https://github.com/thisluis/proffy-plataform.git
 ```
 
 2. Executando a Aplicação:
